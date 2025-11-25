@@ -245,14 +245,14 @@ export default class FireflyService {
     }
 
     const data = await response.json();
-    const currentTags = data.data.attributes.tags || [];
-    
+    const currentTags = data.data.attributes.transactions[0].tags || [];
+
     // Filtrer le tag à supprimer
-    const updatedTags = currentTags.filter(tag => tag.name !== tagName);
-    
+    const updatedTags = currentTags.filter(tag => tag !== tagName);
+
     this.#debugLog("Updated tags after removal", { 
-      originalTags: currentTags.map(t => t.name), 
-      updatedTags: updatedTags.map(t => t.name) 
+      originalTags: currentTags, 
+      updatedTags: updatedTags 
     });
 
     // Mettre à jour la transaction avec les nouveaux tags
