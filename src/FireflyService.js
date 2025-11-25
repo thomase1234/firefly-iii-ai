@@ -246,6 +246,13 @@ export default class FireflyService {
 
     const data = await response.json();
 
+    const tags = data.data.attributes.transactions[0].tags || [];
+    this.#debugLog("Transaction response: only tags", { 
+      content: data,
+      tags: tags,
+      mappedtags: tags.map(tags)
+    });
+
     const currentTags = data.data.attributes.transactions[0].tags || [];
     
     // Filtrer le tag à supprimer
