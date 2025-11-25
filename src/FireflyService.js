@@ -246,9 +246,7 @@ export default class FireflyService {
 
     const data = await response.json();
     this.#debugLog("Transaction response: only tags", { 
-      tags1: data.data.attributes.transactions[0].tags,
-      tags2: data.attributes.transactions[0].tags,
-      tags3: data.data.attributes.tags
+      tags1: data.data.attributes.transactions[0].tags
     });
 
     const currentTags = data.data.attributes.tags || [];
