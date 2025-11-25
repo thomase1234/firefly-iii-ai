@@ -1,3 +1,7 @@
+# Status 
+
+Dev only - not for production use
+
 # Firefly III AI
 
 This project allows you to automatically categorize your expenses, manage destination accounts, and link transactions to budgets in [Firefly III](https://www.firefly-iii.org/) using artificial intelligence.
