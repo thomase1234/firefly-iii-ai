@@ -245,6 +245,10 @@ export default class FireflyService {
     }
 
     const data = await response.json();
+    this.#debugLog("Transaction response", { 
+      transaction: data 
+    });
+
     const currentTags = data.data.attributes.tags || [];
     
     // Filtrer le tag à supprimer
