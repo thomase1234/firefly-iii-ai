@@ -245,11 +245,8 @@ export default class FireflyService {
     }
 
     const data = await response.json();
-    this.#debugLog("Transaction response: only tags", { 
-      tags1: data.data.attributes.transactions[0].tags
-    });
 
-    const currentTags = data.data.attributes.tags || [];
+    const currentTags = data.data.attributes.transactions[0].tags || [];
     
     // Filtrer le tag à supprimer
     const updatedTags = currentTags.filter(tag => tag.name !== tagName);
