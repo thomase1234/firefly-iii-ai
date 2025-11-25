@@ -38,10 +38,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fspms/firefly-iii-ai.git"
+    "url": "https://github.com/thomase1234/firefly-iii-ai.git"
   },
   "bugs": {
-    "url": "https://github.com/fspms/firefly-iii-ai/issues"
+    "url": "https://github.com/thomase1234/firefly-iii-ai/issues"
   },
-  "homepage": "https://github.com/fspms/firefly-iii-ai#readme"
+  "homepage": "https://github.com/thomase1234/firefly-iii-ai#readme"
 }
