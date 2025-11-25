@@ -249,8 +249,7 @@ export default class FireflyService {
     const tags = data.data.attributes.transactions[0].tags || [];
     this.#debugLog("Transaction response: only tags", { 
       content: data,
-      tags: tags,
-      mappedtags: tags.map(tags)
+      tags: tags
     });
 
     const currentTags = data.data.attributes.transactions[0].tags || [];
